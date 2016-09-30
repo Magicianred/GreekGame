@@ -101,13 +101,19 @@ function randomLetter() {
   rand = letter[Math.floor(Math.random() * letter.length)].symbol;        document.getElementById("letter").textContent=rand;
   };
 
-var button = document.getElementsByTagName("button");
+var correct = 0;
+var incorrect = 0;
+var button = document.querySelectorAll(".letter-names button");
 for (var i = 0; i < button.length; i++){
     button[i].onclick = function(){
       var id = this.id 
       if (id == rand) {
-        alert("You got it!!") }
-        else {alert("Too bad!")}
+        alert("You got it!!")
+        correct += 1;
+        console.log("Correct:", correct)}
+        else {alert("Too bad!")
+        incorrect += 1;
+             console.log("Incorrect: ", incorrect)}
     };
     
 }
