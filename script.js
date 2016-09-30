@@ -105,15 +105,9 @@ var button = document.getElementsByTagName("button");
 for (var i = 0; i < button.length; i++){
     button[i].onclick = function(){
       var id = this.id 
-      console.log (id)
+      if (id == rand) {
+        alert("You got it!!") }
+        else {alert("Too bad!")}
     };
     
 }
-
-
-
-
-
-
-
-

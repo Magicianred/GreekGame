@@ -1,5 +1,9 @@
 body {
-  background-color: #f2e6d9;
+  background-color: #fff;
+}
+
+.question {
+  position: relative;
 }
 
 button {
@@ -12,28 +16,30 @@ button {
 .next-button {
     padding: 5px;
     margin: 5px;
-    background-color: #fff;
-    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(59, 89, 145);
+    border: 2px solid black;
+    border-radius: 0;
+    position: absolute;
+    left: 500px;
+    top: 20px;
     width: 70px;
     text-align: center;
-    cursor: pointer;
-    display: inline-block;
-    border: 1px solid black;
+    cursor: default;
 }
 
 #letter {
   display: inline-block;
-  width: 50px;
+  width: 80px;
   height: 50px;
-  border: 1px solid black;
-  border-radius: 25px;
   text-align: center;
+  font-size: 36px;
   line-height: 50px;
   margin: 15px;
 }
 
 
 #letter-names {
-  max-width: 600px;
+  width: 200px;
 }
 
