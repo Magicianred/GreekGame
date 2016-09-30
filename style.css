@@ -9,6 +9,18 @@ button {
     border-radius: 5px;
 }
 
+.next-button {
+    padding: 5px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid black;
+}
+
 #letter {
   display: inline-block;
   width: 50px;
@@ -20,6 +32,8 @@ button {
   margin: 15px;
 }
 
+
 #letter-names {
   max-width: 600px;
 }
+

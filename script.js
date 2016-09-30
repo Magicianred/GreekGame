@@ -101,3 +101,19 @@ function randomLetter() {
   rand = letter[Math.floor(Math.random() * letter.length)].symbol;        document.getElementById("letter").textContent=rand;
   };
 
+var button = document.getElementsByTagName("button");
+for (var i = 0; i < button.length; i++){
+    button[i].onclick = function(){
+      var id = this.id 
+      console.log (id)
+    };
+    
+}
+
+
+
+
+
+
+
+
