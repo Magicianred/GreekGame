@@ -60,7 +60,7 @@ var letter = [
     symbol: "Ο ο"
   },
   {
-    name: "Phi",
+    name: "Pi",
     symbol: "Π π"
   },
   {
@@ -104,16 +104,24 @@ function randomLetter() {
 var correct = 0;
 var incorrect = 0;
 var button = document.querySelectorAll(".letter-names button");
+
 for (var i = 0; i < button.length; i++){
     button[i].onclick = function(){
       var id = this.id 
       if (id == rand) {
         alert("You got it!!")
-        correct += 1;
-        console.log("Correct:", correct)}
+      }
         else {alert("Too bad!")
-        incorrect += 1;
-             console.log("Incorrect: ", incorrect)}
+        incorrect += 1;         
+                  document.querySelector("#incorrect").textContent = incorrect;
+
+              if (incorrect === 3) {
+                alert("Game Over");
+                
+              };
+           
+         };
+         
     };
     
-}
+};

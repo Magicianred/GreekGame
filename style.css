@@ -25,7 +25,15 @@ button {
     top: 20px;
     width: 70px;
     text-align: center;
-    cursor: default;
+}
+
+.newGame {
+    background-color: #cc8800;
+    position: absolute;
+    left: 700px;
+    top: 20px;
+    width: 70px;
+    text-align: center;
 }
 
 #letter {
@@ -42,4 +50,5 @@ button {
 #letter-names {
   width: 200px;
 }
+
 

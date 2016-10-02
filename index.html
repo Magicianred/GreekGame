@@ -1,6 +1,4 @@
-
-<!DOCTYPE html>
-  <html>
+<html>
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -12,6 +10,7 @@
     <row>
       <div id="letter">letter</div>
       <button class="next-button" onclick="randomLetter()">Next</button>
+      <button class="newGame" onclick="location.reload(true)">New Game</button>
     </row>
    </section>
   <br />
@@ -33,7 +32,7 @@
        <button id="Ν ν">Nu</button>
        <button id="Ξ ξ">Xi</button>
        <button id="Ο ο">Omicron</button>
-       <button id="Π π">Phi</button>
+       <button id="Π π">Pi</button>
        <button id="Ρ ρ">Ro</button>
        <button id="Σ σ">Sigma</button>
        <button id="Τ τ">Tau</button>
@@ -44,5 +43,12 @@
        <button id="Ω ω">Omega</button>
      </div>
   </section>
+  
+  <section id="counter-section">
+  <div id="counter">
+    <p>Mistakes:<span id="incorrect"> 0</span></p>
+    </div>
+  </section>
+  
 </body>
 </html>
