@@ -110,13 +110,21 @@ for (var i = 0; i < button.length; i++){
       var id = this.id 
       if (id == rand) {
         alert("You got it!!")
+        correct += 1;
+         document.querySelector("#correct").textContent = correct;
       }
         else {alert("Too bad!")
         incorrect += 1;         
                   document.querySelector("#incorrect").textContent = incorrect;
+              
+      
 
               if (incorrect === 3) {
                 alert("Game Over");
+                
+                for(var i = 0; i < button.length; i++) {
+    button[i].disabled = true;
+};
                 
               };
            
