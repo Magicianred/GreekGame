@@ -105,31 +105,26 @@ var correct = 0;
 var incorrect = 0;
 var button = document.querySelectorAll(".letter-names button");
 
+
 for (var i = 0; i < button.length; i++){
     button[i].onclick = function(){
       var id = this.id 
       if (id == rand) {
-        alert("You got it!!")
         correct += 1;
+        document.querySelector("#letter").textContent = "Yes!";
+        
          document.querySelector("#correct").textContent = correct;
-      }
-        else {alert("Too bad!")
-        incorrect += 1;         
-                  document.querySelector("#incorrect").textContent = incorrect;
-              
-      
-
+      } else {
+        incorrect += 1;      
+   document.querySelector("#letter").textContent = "No!";
+        document.querySelector("#incorrect").textContent = incorrect;            
               if (incorrect === 3) {
                 alert("Game Over");
                 
                 for(var i = 0; i < button.length; i++) {
     button[i].disabled = true;
 };
-                
               };
-           
          };
-         
     };
-    
 };
