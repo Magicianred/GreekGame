@@ -1,5 +1,19 @@
+html, body {
+  min-height: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #fff;
+  background: linear-gradient(#fb3, #58a) no-repeat;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 3rem;
+  margin-bottom: -2rem;
 }
 
 .question {
@@ -7,54 +21,80 @@ body {
 }
 
 button {
-    padding: 5px;
-    margin: 5px;
+    padding: 0.3125rem;
+    margin: 0.3125rem;
     background-color: #fff;
-    border-radius: 5px;
 }
 
 button[disabled] {
   background-color: #cccccc;
 }
 
-.next-button {
-    padding: 5px;
-    margin: 5px;
-    color: #fff;
-    background-color: rgb(59, 89, 145);
+#setUp {
+  float: right;
+  width: 30%;
+}
+
+.display-block {
+     display: block;
+}
+
+#nextButton {
+    max-width: 4.375rem;
+    padding: 0.3125rem;
+    margin: 0.3125rem;
+    color: #black;
+    background-color: #58a;
     border: 2px solid black;
-    border-radius: 0;
-    position: absolute;
-    left: 500px;
-    top: 20px;
-    width: 70px;
     text-align: center;
 }
 
-.newGame {
-    background-color: #cc8800;
-    position: absolute;
-    left: 700px;
-    top: 20px;
-    width: 70px;
+#newGame {
+    max-width: 4.375rem;
+    background-color: #fb3;
+    border: 2px solid black;
+    width: 4.375rem;
     text-align: center;
+}
+
+#game {
+  margin-top: 6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
 }
 
 #letter {
+  float: left;
   display: inline-block;
-  width: 80px;
-  height: 50px;
+  width: 7rem;
+  height: 6.25rem;
   text-align: center;
-  font-size: 36px;
-  line-height: 50px;
-  margin: 15px;
-  border: 1px solid black;
-  border-radius: 25px;
+  font-size: 3.8rem;;
+  line-height: 6.25rem;
+  margin: 0.9375rem;
+  margin-bottom: 2rem;
+  border: 0.125rem solid black;
 }
 
 
-#letter-names {
-  width: 200px;
+.letter-names {
+  float: left;
+  border: 2px solid black;
+  margin: 0 auto;
+  max-width: 34.375rem;
+  padding: 0.8rem;
+}
+
+#counter p {
+  border: 1px solid black;
+  padding: 0.3125rem;
+  margin: 0.3125rem;   
+  display: inline-block;  
 }
 
 

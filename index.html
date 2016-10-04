@@ -1,21 +1,30 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">    
   <title>The Greek letter game</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <section class="question">
-    <row>
+
+ <h1>Welcome to my Greek letters game!</h1>      
+      
+ <section id="game">
+   <row>
+    <div class="wrapper">
       <div id="letter">?</div>
-      <button class="next-button" onclick="randomLetter()">Next</button>
-      <button class="newGame" onclick="location.reload(true)">New Game</button>
-    </row>
-   </section>
-  <br />
-  
-  <section>
+      
+    <div id="setUp">
+      <button id="nextButton" onclick="randomLetter()" class=".display-block">New Letter</button>
+      <button id="newGame" onclick="location.reload(true)" class=".display-block">New Game</button>
+      </div>
+   </row>
+     
+      <div style="clear: both;"></div>
+     
     <div class="letter-names">
        <button id="Α α">Alpha</button>
        <button id="Β β">Beta</button>
@@ -42,14 +51,12 @@
        <button id="Ψ ψ">Psi</button>
        <button id="Ω ω">Omega</button>
      </div>
-  </section>
-  
-  <section id="counter-section">
-  <div id="counter">
-    <p>Mistakes:<span id="incorrect"> 0</span></p>
-    <p>Correct:<span id="correct"> 0</span></p>
+       <div id="counter">
+    <p class="incorrect">Mistakes:<span id="incorrect"> 0</span></p>
+    <p class="correct">Correct:<span id="correct"> 0</span></p>
     </div>
-  </section>
-  
+  </div>
+</section>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
