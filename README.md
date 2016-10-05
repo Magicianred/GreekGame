@@ -1,5 +1,5 @@
 # GreekGame
 
-Little game to help my son learn Greek Alphabet.
+A little game to help my son learn Greek Alphabet.
 
-Currently on CodePen: http://codepen.io/Zuzana/pen/wzgvgw
+Match a greek symbol to its name. If you guess wrong 3 times, the game is over. 
